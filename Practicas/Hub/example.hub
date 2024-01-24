@@ -1,0 +1,22 @@
+# Fichero de ejemplo de configuración
+
+# Estos dos campos son obligatorios y
+# deben aparecer una única vez
+ip 192.168.1.11
+community security
+
+# Si el segmento o el puerto no existen en el hub
+# o el mismo puerto aparece más de una vez en la lista,
+# se ignorará la asignación de la línea y se asignará
+# el segmento por defecto (si está especificado)
+port 2 segment 1
+port 3 segment 2
+port 4 segment 2
+port 5 segment 4
+port 6 segment 2
+
+
+# Este campo no puede aparecer más de una vez
+# Si no está o se comenta sólo se configurarán
+# los puertos especificados en la lista
+default 1
